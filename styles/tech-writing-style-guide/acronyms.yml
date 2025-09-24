@@ -8,9 +8,6 @@ second: '(?:\b[A-Z|a-z|-]+ )+\(([A-Z]{3,5})\)'
 exceptions:
 # Departmental
 - DSIT
-
-# GOV.UK specific
-- GOV
 - GDS
 - CDDO
 - HMRC
@@ -19,6 +16,9 @@ exceptions:
 - NHS
 - DBS
 - NCSC
+
+# GOV.UK specific
+- GOV
 
 # GOV.UK One Login specific
 - ADR
