@@ -3,8 +3,8 @@ message: "'%s' must be defined in the first instance"
 level: error
 scope: text
 ignorecase: false
-first: '\b([A-Z]{3,5})\b'
-second: '(?:\b[A-Z|a-z|-]+ )+\(([A-Z]{3,5})\)'
+first: '(?<!/)\b([A-Z]{3,5})\b(?!/\b)(?!-\d)'
+second: '(?:\b[A-Za-z-]+ )+\(([A-Z]{3,5})\)'
 exceptions:
 # Departmental
 - DSIT
